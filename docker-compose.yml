@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  ananaconda:
+    build: .
+    volumes:
+      - type: bind
+        source: .
+        target: /opt/notebooks/
+    ports:
+      - '8888:8888'
